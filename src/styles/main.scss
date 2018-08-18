@@ -1,5 +1,7 @@
 @import 'config';
+@import 'nav';
 
 body {
-  background: $body-color;
+  background: $color-light;
+  color: $color-dark;
 }

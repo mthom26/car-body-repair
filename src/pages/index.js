@@ -1,12 +1,14 @@
 import React from 'react';
 
+import Nav from '../components/Nav';
+
 import '../styles/reboot.css';
 import '../styles/main.scss';
 
 const Index = () => {
   return (
     <div>
-      <h1>Car Body Repair</h1>
+      <Nav />
     </div>
   );
 };
