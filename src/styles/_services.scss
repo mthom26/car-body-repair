@@ -5,6 +5,11 @@
 
 .service {
   display: flex;
+  height: 350px;
+
+  &:nth-child(2) .serviceImage {
+    order: -1;
+  }
 }
 
 .serviceImage {
