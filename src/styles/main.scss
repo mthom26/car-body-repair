@@ -1,14 +1,48 @@
 @import 'config';
-@import 'nav';
-@import 'header';
-@import 'services';
 
 body {
   background: $color-light;
   color: $color-dark;
 }
 
-.container {
-  max-width: 1080px;
-  margin: 0 auto;
+hr {
+  border: 0;
+  height: 2px;
+  background: $color-primary;
 }
+
+.container {
+  margin: 0 auto;
+  
+  &-sm {
+    max-width: 580px;
+  }
+
+  &-md {
+    max-width: 820px;
+  }
+}
+
+/* Text */
+.text-center {
+  text-align: center;
+}
+
+/* Sizing */
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+/* Imports at the end to ensure they are applied */
+@import 'nav';
+@import 'header';
+@import 'about';
+@import 'services';

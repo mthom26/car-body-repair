@@ -1,26 +1,26 @@
 import React from 'react';
+import Img from 'gatsby-image';
 
 import Container from './utils/Container';
 
-import cog from '../images/cog-rounded.svg';
-
-const Services = () => {
+const Services = ({ bodyImage, resprayImage, wheelsImage }) => {
+  console.log(bodyImage);
+  console.log(resprayImage);
+  console.log(wheelsImage);
   return (
-    <Container>
-      <div className="services">
-        <div className="service">
-          <img src={cog} />
-          <h2>Bodywork Repair</h2>
-          <p></p>
+    <Container className="services">
+      <div className="service">
+        <div className="serviceContent">
+          <Container className="text-center" width="sm">
+            <h2>Bodywork Repair</h2>
+            <p>We offer a large range of repairs including bumper and full panel replacement, dent removal and scratch/scuff removal using machine polishing leaving your car looking as good as new.</p>
+          </Container>
         </div>
-        <div className="service">
-          <img src={cog} />
-          <h2>Alloy Wheel Refurbishment</h2>
-        </div>
-        <div className="service">
-          <img src={cog} />
-          <h2>Paint Resprays</h2>
-        </div>
+        <Img
+          outerWrapperClassName="serviceImage"
+          style={{height: '100%'}}
+          sizes={bodyImage.childImageSharp.sizes}
+        />
       </div>
     </Container>
   );

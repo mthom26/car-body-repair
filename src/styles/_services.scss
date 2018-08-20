@@ -1,3 +1,19 @@
 .services {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  display: flex;
+}
+
+.serviceImage {
+  height: 100%;
+  flex-basis: 40%;
+}
+
+.serviceContent {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
 }

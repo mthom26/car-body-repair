@@ -3,6 +3,7 @@
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  margin-bottom: $spacing-4;
 
   h1, h2 {
     color: $color-light;
