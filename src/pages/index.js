@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import About from '../components/About';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
+import Footer from '../components/Footer';
 
 import '../styles/reboot.css';
 import '../styles/main.scss';
@@ -22,6 +23,7 @@ const Index = ({ data }) => {
         wheelsImage={data.servicesWheels}
       />
       <Testimonials image={data.testimonials} />
+      <Footer />
     </div>
   );
 };
