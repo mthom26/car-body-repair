@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import Header from '../components/Header';
 import About from '../components/About';
 import Services from '../components/Services';
+import Testimonials from '../components/Testimonials';
 
 import '../styles/reboot.css';
 import '../styles/main.scss';
@@ -20,6 +21,7 @@ const Index = ({ data }) => {
         resprayImage={data.servicesRespray}
         wheelsImage={data.servicesWheels}
       />
+      <Testimonials image={data.testimonials} />
     </div>
   );
 };
@@ -50,6 +52,13 @@ export const query = graphql`
     servicesWheels: file(relativePath: { eq: "images/services-wheels.jpg"}) {
       childImageSharp {
         sizes(maxWidth: 1080) {
+          ...GatsbyImageSharpSizes
+        }
+      }
+    }
+    testimonials: file(relativePath: { eq: "images/testimonials.jpg"}) {
+      childImageSharp {
+        sizes(maxWidth: 2000) {
           ...GatsbyImageSharpSizes
         }
       }
