@@ -1,8 +1,14 @@
 @import 'config';
 @import 'nav';
 @import 'header';
+@import 'services';
 
 body {
   background: $color-light;
   color: $color-dark;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
 }
