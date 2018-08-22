@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+}
+
+.contactDetails {
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.contactDetailsPair {
+  display: flex;
+  margin-bottom: $spacing-2;
+  p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}
+
+.googleMap {
+  flex-basis: 40%;
+}
