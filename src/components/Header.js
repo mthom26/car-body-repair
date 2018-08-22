@@ -3,7 +3,7 @@ import Img from 'gatsby-image';
 
 const Header = ({ image }) => {
   return (
-    <div className="header">
+    <div id="header" className="header">
       <div className="headerContentContainer">
         <h1>Car Body Repair</h1>
         <h2>Lorem Ipsum</h2>

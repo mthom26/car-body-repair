@@ -8,7 +8,7 @@ const Services = ({ bodyImage, resprayImage, wheelsImage }) => {
   // console.log(resprayImage);
   // console.log(wheelsImage);
   return (
-    <Container className="services">
+    <Container id="services" className="services">
       <div className="service">
         <div className="serviceContent">
           <Container className="text-center" width="xs">

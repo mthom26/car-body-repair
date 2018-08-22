@@ -25,7 +25,7 @@ const MyMapComponent = withScriptjs(withGoogleMap(() => {
 
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <div className="contactDetails">
         <Container width="xs">
           <h2>Quality Repairs</h2>
