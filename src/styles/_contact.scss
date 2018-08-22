@@ -11,6 +11,11 @@
 .contactDetailsPair {
   display: flex;
   margin-bottom: $spacing-2;
+
+  &-inline {
+    margin-bottom: 0;
+  }
+
   p {
     font-size: 1.2rem;
     margin: 0;

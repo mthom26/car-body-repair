@@ -3,6 +3,8 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 import logo from '../images/logo.svg';
 import menuIcon from '../images/menuIcon.svg';
+import emailIcon from '../images/e-mail-white.svg';
+import phoneIcon from '../images/phone-white.svg';
 
 class Nav extends React.Component {
   constructor() {
@@ -23,8 +25,24 @@ class Nav extends React.Component {
     return (
       <div className="nav">
         <div className="navInfo">
-          <a href="#header">info@carbodyrepair.com</a>
-          <p>012 345678</p>
+          <div className="contactDetailsPair contactDetailsPair-inline">
+            <img
+              src={phoneIcon}
+              width="22px"
+              height="22px"
+              style={{marginRight: '1rem'}}
+            />
+            <p>000 123456789</p>
+          </div>
+          <div className="contactDetailsPair contactDetailsPair-inline">
+            <img
+              src={emailIcon}
+              width="22px"
+              height="22px"
+              style={{marginRight: '1rem'}}
+            />
+            <p>info@autobodyrepairs.com</p>
+          </div>
         </div>
 
         <div className="navContainer">
