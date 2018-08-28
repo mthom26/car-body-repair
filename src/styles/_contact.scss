@@ -25,3 +25,13 @@
 .googleMap {
   flex-basis: 40%;
 }
+
+@include mediaMd {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contactDetails {
+    padding: 2rem 0;
+  }
+}

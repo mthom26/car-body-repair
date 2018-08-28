@@ -34,3 +34,13 @@
   height: 100%;
   background: rgba(0,0,0,0.5);
 }
+
+@include mediaMd {
+  .testimonials {
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+
+  .testimonialsContent {
+    padding: 2rem 0;    
+  }
+}

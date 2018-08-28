@@ -38,3 +38,33 @@
   display: flex;
   align-items: center;
 }
+
+@include mediaMd {
+  .service {
+    height: auto;
+    flex-direction: column;
+
+    &:nth-child(2) .serviceImage {
+      order: 0;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+      );
+    }
+  }
+
+  .serviceImage {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  .serviceContent {
+    margin-bottom: $spacing-4;
+  }
+}

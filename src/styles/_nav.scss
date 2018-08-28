@@ -13,9 +13,10 @@
 }
 
 .navContainer {
+  position: relative;
   display: flex;
+  height: 3.5rem;
   justify-content: space-between;
-  align-items: stretch;
   background: $color-dark;
   color: $color-light;
   padding: 0 2rem;
@@ -49,6 +50,8 @@
 .navLogoAndMenu {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100%;
   z-index: 21;
   background: $color-dark;
 }
@@ -56,7 +59,6 @@
 .navItems {
   display: flex;
   background: $color-dark;
-  
 }
 
 .navLink {
@@ -77,20 +79,30 @@
 
   .navContainer {
     flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .navLogoAndMenu{
+    align-items: center;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .navItems {
     flex-direction: column;
     position: absolute;
     z-index: 19;
-    top: 74px;
+    top: 3.5rem;
     left: 0;
     transition: transform 300ms linear;
     width: 100%;
   }
 
   .navLink {
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   .navItemsHide {

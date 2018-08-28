@@ -57,13 +57,13 @@ class Nav extends React.Component {
             />
           </div>
           <nav className={`${navItemsClass} navItems`}>
-            <AnchorLink offset="100" href="#about" className="navLink">
+            <AnchorLink onClick={this.toggleNav} offset="100" href="#about" className="navLink">
               <p>About</p>
             </AnchorLink>
-            <AnchorLink offset="100" href="#services" className="navLink">
+            <AnchorLink onClick={this.toggleNav} offset="100" href="#services" className="navLink">
              <p>Services</p>
             </AnchorLink>
-            <AnchorLink offset="100" href="#contact" className="navLink">
+            <AnchorLink onClick={this.toggleNav} offset="100" href="#contact" className="navLink">
               <p>Contact</p>
             </AnchorLink>
           </nav>
