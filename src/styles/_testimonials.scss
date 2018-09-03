@@ -2,7 +2,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 420px;
 }
 
 .testimonialsContent {
@@ -13,6 +13,7 @@
   color: $color-light;
   position: relative;
   z-index: 10;
+  padding: 2rem 0;
 }
 
 .testimonialsImage {
@@ -37,10 +38,21 @@
 
 @include mediaMd {
   .testimonials {
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 19fr 1fr;
   }
 
   .testimonialsContent {
     padding: 2rem 0;    
   }
+}
+
+.cprov {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
