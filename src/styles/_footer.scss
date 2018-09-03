@@ -4,7 +4,26 @@
 
 .footerContainer {
   color: $color-light;
+  padding: $spacing-2 0;
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+
+  p {
+    margin-bottom: $spacing-1;
+  }
+}
+
+@include mediaMd {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .footerItem {
+    margin-bottom: 0;
+
+    &:nth-child(1) {
+      margin-bottom: $spacing-3;
+    }
+  }
 }

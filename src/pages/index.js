@@ -12,9 +12,8 @@ import '../styles/reboot.css';
 import '../styles/main.scss';
 
 const Index = ({ data }) => {
-  //console.log(data)
   return (
-    <div>
+    <div style={{overflowX: 'hidden'}}>
       <Nav />
       <Header image={data.header} />
       <About />

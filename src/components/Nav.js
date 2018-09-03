@@ -47,7 +47,9 @@ class Nav extends React.Component {
 
         <div className="navContainer">
           <div className="navLogoAndMenu">
-            <AnchorLink href="#header"><img src={logo} width="42px" /></AnchorLink>
+            <AnchorLink href="#header">
+              <img src={logo} width="150px" />
+            </AnchorLink>
             <img
               className="menuBtn"
               src={menuIcon}
