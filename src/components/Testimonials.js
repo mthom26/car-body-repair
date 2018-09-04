@@ -20,7 +20,7 @@ const Testimonials = ({ image }) => {
           naturalSlideHeight={100}
           naturalSlideWidth={150}
           totalSlides={3}
-          isPlaying={false}
+          isPlaying={true}
           interval={5000}
           className="cprov"
         >
@@ -41,8 +41,6 @@ const Testimonials = ({ image }) => {
               <p>Mr T. Jeffries</p>
             </Slide>
           </Slider>
-          <ButtonBack>Back</ButtonBack>
-          <ButtonNext>Next</ButtonNext>
         </CarouselProvider>
       </div>
       

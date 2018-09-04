@@ -1,12 +1,15 @@
 import React from 'react'
 import Img from 'gatsby-image';
+import { Fade } from 'react-reveal';
 
 const Header = ({ image }) => {
   return (
     <div id="header" className="header">
       <div className="headerContentContainer">
-        <h1>Car Body Repair</h1>
-        <h2>Lorem Ipsum</h2>
+        <Fade>
+          <h1>Auto Body Repairs</h1>
+          <h2>High quality accident repairs, resparays and wheel refurbishment.</h2>
+        </Fade>
       </div>
       <Img 
         outerWrapperClassName="headerImage"

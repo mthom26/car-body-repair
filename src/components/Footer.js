@@ -19,17 +19,21 @@ const Footer = () => {
         <div className="footerItem">
           <p>Call or email for an estimate or advice.</p>
           <div>
-            <img
-              src={phoneIcon}
-              width="22px"
-              height="22px"
-              style={{marginRight: '1rem'}}
-            />
-            <img
-              src={emailIcon}
-              width="22px"
-              height="22px"
-            />
+            <a href="tel:000123456789">
+              <img
+                src={phoneIcon}
+                width="22px"
+                height="22px"
+                style={{marginRight: '1rem'}}
+              />
+            </a>
+            <a href="mailto:info@autobodyrepairs.com">
+              <img
+                src={emailIcon}
+                width="22px"
+                height="22px"
+              />
+            </a>
           </div>
         </div>
       </Container>

@@ -1,3 +1,22 @@
 .about {
-  margin-bottom: $spacing-4;
+  padding: $spacing-4 $spacing-1;
+}
+
+.aboutIcons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: $spacing-4;
+  p {
+    font-weight: bold;
+  }
+}
+
+.aboutIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutIconImg {
+  margin-bottom: $spacing-2;
 }

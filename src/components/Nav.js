@@ -32,7 +32,9 @@ class Nav extends React.Component {
               height="22px"
               style={{marginRight: '1rem'}}
             />
-            <p>000 123456789</p>
+            <a href="tel:000123456789">
+              000 123456789
+            </a>
           </div>
           <div className="contactDetailsPair contactDetailsPair-inline">
             <img
@@ -41,7 +43,9 @@ class Nav extends React.Component {
               height="22px"
               style={{marginRight: '1rem'}}
             />
-            <p>info@autobodyrepairs.com</p>
+            <a href="mailto:info@autobodyrepairs.com">
+              info@autobodyrepairs.com
+            </a>
           </div>
         </div>
 
@@ -62,7 +66,7 @@ class Nav extends React.Component {
             <AnchorLink onClick={this.toggleNav} offset="100" href="#about" className="navLink">
               <p>About</p>
             </AnchorLink>
-            <AnchorLink onClick={this.toggleNav} offset="100" href="#services" className="navLink">
+            <AnchorLink onClick={this.toggleNav} offset="140" href="#services" className="navLink">
              <p>Services</p>
             </AnchorLink>
             <AnchorLink onClick={this.toggleNav} offset="100" href="#contact" className="navLink">
