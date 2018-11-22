@@ -8,7 +8,7 @@ const Header = ({ image }) => {
       <div className="headerContentContainer">
         <Fade>
           <h1>Auto Body Repairs</h1>
-          <h2>High quality accident repairs, resparays and wheel refurbishment.</h2>
+          <h2>High quality accident repairs, resprays and wheel refurbishment.</h2>
         </Fade>
       </div>
       <Img 
